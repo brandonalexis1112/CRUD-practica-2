@@ -1,10 +1,12 @@
 <template>
+   
   <div >
+    
     <div id="header">
       <Search v-on:query-change="querySearch"/>
     </div>
     <div id="main-container">
-      <h2>Todos</h2>
+      <h1>Skills</h1>
       <TodoAdd v-on:add-todo="addTodo"/>
       <Todos v-bind:todoslist="copyTodos" @delete-todo="deleteTodo" />
     </div>
@@ -48,22 +50,22 @@ export default {
       todos: [
         {
           id:0,
-          title: 'comprar la cena',
+          title: 'Vue',
           completed: false
         },
           {
           id:1,
-          title: 'sacar a pasear al perro',
+          title: 'JavaScript',
           completed: true
         },
           {
           id:2,
-          title: 'jugar play',
+          title: 'Html',
           completed: false
         },
           {
           id:3,
-          title: 'jugar final',
+          title: 'Css',
           completed: true
         }
 
@@ -80,23 +82,31 @@ export default {
 <style>
 *{
   box-sizing: border-box;
+  border-radius: 15px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  
 }
 body{
-  font: arial, helvetica, sans-serif;
+ 
   font-size: 1.5em;
   padding: 0;
   margin: 0;
 }
 #main-container{
-  border: solid 1px #ccc;
+  background-color:  #42b983;
+  border: solid 1px#2c3e50;
   width: 600px;
   margin: 100px auto;
+  
 }
 header{
+  
   background: black;
   padding: 10px;
 }
-h2{
-  padding: 0 10px;
+h1{
+  padding: 0 230px;
+  color :white;
+  
 }
 </style>
