@@ -1,7 +1,9 @@
 <template>
     <div id="search-container">
+        
         <h3>Search Skills </h3>
         <input type="text"  placeholder="search in here " v-model="query" v-on:input="$emit('query-change',query)">
+        
     </div>
 </template>
 

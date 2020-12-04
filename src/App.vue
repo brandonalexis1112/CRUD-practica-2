@@ -1,7 +1,18 @@
-<template>
-   
+<template>  
   <div >
-    
+    <b-navbar toggleable="lg" type="dark" variant="dark">
+      <b-container>
+         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+          <b-navbar-brand href="#">Brandon Alexis</b-navbar-brand>
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav>
+        <b-nav-item :to="{name: 'Skills'}" exact>Skills</b-nav-item>
+        <b-nav-item :to="{name: 'Resume'}">Resume</b-nav-item>
+      </b-navbar-nav>
+        </b-collapse>
+
+      </b-container>
+      </b-navbar>
     <div id="header">
       <Search v-on:query-change="querySearch"/>
     </div>
@@ -10,6 +21,7 @@
       <TodoAdd v-on:add-todo="addTodo"/>
       <Todos v-bind:todoslist="copyTodos" @delete-todo="deleteTodo" />
     </div>
+
   </div>
 </template>
 
@@ -79,34 +91,3 @@ export default {
 }
 </script>
 
-<style>
-*{
-  box-sizing: border-box;
-  border-radius: 15px;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  
-}
-body{
- 
-  font-size: 1.5em;
-  padding: 0;
-  margin: 0;
-}
-#main-container{
-  background-color:  #42b983;
-  border: solid 1px#2c3e50;
-  width: 600px;
-  margin: 100px auto;
-  
-}
-header{
-  
-  background: black;
-  padding: 10px;
-}
-h1{
-  padding: 0 230px;
-  color :white;
-  
-}
-</style>
