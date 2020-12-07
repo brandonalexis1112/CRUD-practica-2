@@ -1,9 +1,12 @@
 <template>
   
-  <div id="header">
+  <div id="header" class="mt-5">
+    
       <Search v-on:query-change="querySearch"/>
       <div id="main-container">
-      <h1>Skills</h1>
+        <b-row>
+        <b-col><h1>Skills(CRUD)</h1></b-col>
+        </b-row>
       <TodoAdd v-on:add-todo="addTodo"/>
       <Todos v-bind:todoslist="copyTodos" @delete-todo="deleteTodo" />
     </div>

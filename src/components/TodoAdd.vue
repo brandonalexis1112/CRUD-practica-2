@@ -32,6 +32,7 @@ export default {
 
 <style scoped>
     #add-container{
+        
         padding: 10px;
     }
     input{
