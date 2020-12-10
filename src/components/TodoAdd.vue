@@ -39,6 +39,6 @@ export default {
         padding: 10px;
         outline: none;
         border:solid 1px #ccc;
-        width: 100%;
+        width: 90%;
     }
 </style>

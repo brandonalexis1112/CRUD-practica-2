@@ -3,6 +3,7 @@
   <div id="header" class="mt-5">
     
       <Search v-on:query-change="querySearch"/>
+      
       <div id="main-container">
         <b-row>
         <b-col><h1>Skills(CRUD)</h1></b-col>
@@ -89,10 +90,6 @@ export default {
  
     
     }
-
-
-  
-    
-  
+ 
 
 </script>
