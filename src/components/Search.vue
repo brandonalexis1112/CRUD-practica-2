@@ -1,10 +1,9 @@
 <template>
-    <div id="search-container">
-        
+    <b-row><b-col >
         <h3>Search Skills </h3>
-        <input type="text"  placeholder="search in here " v-model="query" v-on:input="$emit('query-change',query)">
         
-    </div>
+        <input type="text"  placeholder="search in here " v-model="query" v-on:input="$emit('query-change',query)">
+        </b-col></b-row>
 </template>
 
 <script>
@@ -29,13 +28,13 @@ export default {
 }
 input{
     padding: 10px;
-    width: 100%;
+    width: 90%;
     outline:none;
     background-color:   #2c3e50 ;
 }
 h3{
     padding: 0 15px;
-    color: white;
+  
     
 }
 
