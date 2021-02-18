@@ -1,13 +1,20 @@
 <template>
     <div class="todo" :class="{completed: todo.completed}">
         <div class="todo-body" >
+             <b-row >
+        <b-col cols="12" md="6" lg="8">
             <input type="checkbox" 
             :checked="todo.completed? 'checked':''"
             v-on:change="checkTodo">
             {{todo.title}}
+            </b-col></b-row>
         </div>
+        
         <div class="todo-actions">
+            <b-row >
+            <b-col cols="12" md="6" lg="8">
             <button  @click="$emit('delete-todo', todo.id)">Eliminar</button>
+            </b-col></b-row>
         </div>
     </div>
 </template>

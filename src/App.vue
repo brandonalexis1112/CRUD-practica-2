@@ -9,6 +9,7 @@
           <b-navbar-nav>
         <b-nav-item :to="{name: 'Home'}" exact>Home</b-nav-item>
         <b-nav-item :to="{name: 'Cv'}">CV</b-nav-item>
+        <b-nav-item :to="{name: 'ChatLog'}">ChatLog</b-nav-item>
       </b-navbar-nav>
         </b-collapse>
       </b-container>

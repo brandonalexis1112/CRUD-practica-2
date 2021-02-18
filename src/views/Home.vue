@@ -5,11 +5,13 @@
       <Search v-on:query-change="querySearch"/>
       
       <div id="main-container">
-        <b-row>
-        <b-col><h1>Skills(CRUD)</h1></b-col>
+        <b-row >
+        <b-col cols="12" md="6" lg="8"><h1>Skills(CRUD)</h1></b-col>
         </b-row>
+        <b-row><b-col cols="12" md="6" lg="8">
       <TodoAdd v-on:add-todo="addTodo"/>
       <Todos v-bind:todoslist="copyTodos" @delete-todo="deleteTodo" />
+      </b-col></b-row>
     </div>
     </div>
   

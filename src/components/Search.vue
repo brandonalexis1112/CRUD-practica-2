@@ -1,5 +1,5 @@
 <template>
-    <b-row><b-col >
+    <b-row><b-col cols="12" md="6" lg="8">
         <h3>Search Skills </h3>
         
         <input type="text"  placeholder="search in here " v-model="query" v-on:input="$emit('query-change',query)">
